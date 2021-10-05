@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #2308b8;
+        font-family: fantasy;
+      }
+      h2 {
+        text-align: center;
+        border: 8px ridge #ad86ec;
+        border-radius: 10px;
+        padding: 15px;
+        font-family: fantasy;
+        font-size: 22px;
+        margin: 20px auto;
+        width: fit-content;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        display: box;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px auto;
+        text-align: center;
+      }
+
+     button {
+       background-image: linear-gradient(to right, #dd5e89 0%, #f7bb97 51%, #dd5e89 100%);
+       background-size: 200% auto;
+       border-radius: 25px;
+       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       color: #FFF;
+       cursor: pointer;
+       display: block;
+       font-family: "Arial Black";
+       font-size: 20px;
+       margin: 0 auto;
+       padding: 15px;
+       text-align: center;     
+       text-transform: uppercase;
+       transition: 0.5s;
+       width: 50%;
+    
+     }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <h1>🌜Your Zodiac Sign Personality🌛</h1>
+      <h2>Fire, Water, Earth, Air</h2>
+      <img
+      src=https://static7.depositphotos.com/1008559/772/v/600/depositphotos_7729497-stock-illustration-horoscope-circle.jpg
+      />
+      <p>
+        Fire - Aries (March 21 - April 19), Leo (July 23 - August 22), and Sagittarius (November 22 - December 21) <br/>
+        Water - Cancer (June 21 - July 22), Scorpio (October 23 - November 21), Pisces (February 19 - March 20) <br/>
+        Earth - Taurus (April 20 - May 20), Virgo (August 23 - September 22), Capricorn (December 22-January 19) <br/>
+        Air - Gemini (May 21-June 20), Libra (September 23 -October 22), Aquarius (January 20-February 18) <br/>
+      </p>
+
+      <button>
+        Calculate
+      </button>
+      </a>
+
+      <p>
+        <strong> To Find Out More, visit </strong> 
+        <a href = "https://www.astrology-zodiac-signs.com/">astrology-zodiac-signs</a>
+      </p>
+
+      <script>
+      function calculate() {
+        let sign = prompt("What is Your Sign?")
+      
+
+        if (sign === "Aries")
+        alert ("You are Courageous, determined, confident, enthusiastic, optimistic, honest, passionate but impatient, moody, short-tempered, impulsive, aggressive. You like Comfortable clothes, taking on leadership roles, physical challenges, individual sports")
+        
+        if(sign=== "Leo")
+        alert ("You are Creative, passionate, generous, warm-hearted, cheerful, humorous but Arrogant, stubborn, self-centered, lazy, inflexible. You like Theater, taking holidays, being admired, expensive things, bright colors, fun with friends ")
+
+        if (sign === "Sagittarius")
+        alert ("You are Generous, idealistic, great sense of humor but Promises more than can deliver, very impatient, will say anything no matter how undiplomatic. You like Freedom, travel, philosophy, being outdoors ")
+        
+        if (sign === "Cancer")
+         alert ("You are Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive but Moody, pessimistic, suspicious, manipulative, insecure. You like Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends")
+
+        if (sign === "Scorpio")
+        alert ("You are Resourceful, brave, passionate, stubborn, a true friend but Distrusting, jealous, secretive, violent. You like Truth, facts, being right, longtime friends, teasing, a grand passion.")
+
+        if (sign === "Pisces")
+        alert ("You are Compassionate, artistic, intuitive, gentle, wise, musical but Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr. You like Being alone, sleeping, music, romance, visual media, swimming, spiritual themes")
+
+        if (sign === "Taurus")
+        alert ("You are Reliable, patient, practical, devoted, responsible, stable but Stubborn, possessive, uncompromising. You like Gardening, cooking, music, romance, high quality clothes, working with hands")
+
+        if (sign === "Virgo")
+        alert ("You are Loyal, analytical, kind, hardworking, practical but Shyness, worry, overly critical of self and others, all work and no play. You like Animals, healthy food, books, nature, cleanliness")
+
+        if (sign === "Capricorn")
+        alert ("You are Responsible, disciplined, self-control, good managers but are Know-it-all, unforgiving, condescending, expecting the worst. You like Family, tradition, music, understated status, quality craftsmanship")
+
+        if (sign === "Gemini")
+        alert ("You are Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas but Nervous, inconsistent, indecisive. You like Music, books, magazines, chats with nearly anyone, short trips around the town")
+
+        if (sign === "Libra")
+        alert ("You are Cooperative,diplomatic, gracious, fair-minded, social but Indecisive, avoids confrontations, will carry a grudge, self-pity. You like Harmony, gentleness, sharing with others, the outdoors.")
+
+        if (sign === "Aquarius")
+        alert ("You are Progressive, original, independent, humanitarian but Runs from emotional expression, temperamental, uncompromising, aloof. You like Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener.")
+
+      }
+      {
+        let calculateButton = document.querySelector ("button")
+
+        calculateButton.addEventListener ("click", calculate);
+      }
+       </script>
+       
+  </body>
+</html>
